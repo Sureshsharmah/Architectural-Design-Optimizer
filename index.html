@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimization Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Optimization Dashboard</h1>
+        <p>Click below to simulate energy, material, and carbon footprint optimization.</p>
+        <!-- Link to /optimize route to trigger optimization and display results -->
+        <!--<a href="/optimize" class="btn btn-info btn-lg mt-3">View the Report</a>-->
+    </div>
+    
+    <form action="/optimize" method="post">
+        <button type="submit" class="btn btn-primary btn-lg w-100">Optimize Now</button>
+    </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
